@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var app = express();
 
-var port = 3000;
+var port = 80;
 
 app.use(express.static('public'));
 app.use(express.static('src/views'));
