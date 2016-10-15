@@ -91,3 +91,15 @@ footer {
         height: 70%;
     }
 }
+
+#About-me p {
+    font-size: 18px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#About-me ul {
+    font-size: 18px;
+    padding-left: 130px;
+    padding-right: 100px;
+}
