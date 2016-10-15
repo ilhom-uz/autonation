@@ -40,6 +40,11 @@ app.get('/blog', function (req, res) {
     res.render('blog');
 });
 
+app.get('/portfolioproject', function (req, res) {
+    res.render('myportfolio');
+});
+
+
 
 
 
