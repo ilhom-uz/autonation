@@ -12,7 +12,7 @@ app.set('views', './src/views');
 app.set('view engine', '.ejs');
 
 //Routes from /routes/routes.js
-require('./routes')(app);
+require('./routes/routes')(app);
 
 
 app.listen(port, function (err) {
