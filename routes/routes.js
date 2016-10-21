@@ -1,16 +1,18 @@
-
+var express = require('express');
 var fs = require('fs');
-
+var app = express();
 
 module.exports = function(app) {
     app.get('/', function (req, res) {
         res.render('index');
     });
+
     //Direct Link to my Resume
     app.get('/resume', function (req, res) {
-        var filePath = "/public/files/Ilkhom_Karimov_Resume.pdf";
-
+        var filePath = "/../public/files/Ilkhom_Karimov_Resume.pdf";
+        //var data = fs.readFileSync('input.txt');
         fs.readFile(__dirname + filePath, function (err, data) {
+            console.log(__dirname + filePath);
             res.contentType("application/pdf");
             res.send(data);
         });
