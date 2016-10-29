@@ -60,4 +60,8 @@ module.exports = function(app) {
     app.get('/startupidea', function (req, res) {
         res.render('startupidea');
     });
+    //Smartup Ideas Page
+    app.get('/publications', function (req, res) {
+        res.render('publications');
+    });
 };
